@@ -1,0 +1,16 @@
+{
+  "crons": [
+    {
+      "path": "/api/sync-results",
+      "schedule": "*/5 * * * *"
+    }
+  ],
+  "functions": {
+    "api/sync-results.js": {
+      "maxDuration": 30
+    },
+    "api/get-results.js": {
+      "maxDuration": 10
+    }
+  }
+}
